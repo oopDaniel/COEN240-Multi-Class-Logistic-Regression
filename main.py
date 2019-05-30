@@ -1,7 +1,7 @@
 import numpy as np
 from tensorflow.keras.datasets import mnist
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import confusion_matrix
+import sklearn.metrics as metrics
 
 if __name__ == '__main__':
   # Load data
@@ -26,5 +26,6 @@ if __name__ == '__main__':
   # Predict the result of test data
   predition = log_reg.predict(test_data)
 
-  # Show the confusion matrix
-  print(confusion_matrix(test_label, predition))
+  # Show the accuracy and confusion matrix
+  print(metrics.accuracy_score(test_label, predition))
+  print(metrics.confusion_matrix(test_label, predition))

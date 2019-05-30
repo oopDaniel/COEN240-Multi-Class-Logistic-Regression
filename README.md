@@ -1,7 +1,7 @@
 # Hand-written digit recognition using multi-class logistic regression
 
 - Simple program to recognize hand-written digits from mnist dataset using multi-class logistic regression
-- Plot the confusion matrix
+- Show the accuracy score and confusion matrix
 
 > Training
 
